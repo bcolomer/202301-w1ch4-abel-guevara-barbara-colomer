@@ -8,6 +8,7 @@
   <title>Pets House</title>
   <link rel="icon" href="./pet-icon.png">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -32,14 +33,20 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>PET ACTIVITIES</h1>
-    <h2>Take a closer look</h2>
-    <div><a href="#">VIEW ALL</a></div>
-    <section>
-      <img src="./imagenes/01.jpg" alt="dog with toy">
-      <img src="./imagenes/02.jpg" alt="hidden cat">
-      <img src="./imagenes/03.jpg" alt="dog running">
+  <main class="container">
+    <h1 class="container__web-name">PET ACTIVITIES</h1>
+    <h2 class="container__web-name-big">Take a closer look</h2>
+    <button class="container__link-button"><a class="container__link-ref" href="#">VIEW ALL</a></button>
+    <section class="container__pictures">
+      <div class="container__pictures-text">
+        <img src="./imagenes/01.jpg" alt="dog with toy">
+      </div>
+      <div class="container__pictures-text">
+        <img src="./imagenes/02.jpg" alt="hidden cat">
+      </div>
+      <div class="container__pictures-text">
+        <img src="./imagenes/03.jpg" alt="dog running">
+      </div>
     </section>
   </main>
 </body>
