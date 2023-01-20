@@ -14,10 +14,12 @@ body {
 .container__web-name {
   color: #ed6336;
   font-size: 1rem;
+  text-align: center;
 }
 
 .container__web-name-big {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 a {
@@ -41,11 +43,18 @@ a {
 
 .container__pictures {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.container__pictures-text {
+  text-align: center;
 }
 
 .container__pictures img {
@@ -54,8 +63,56 @@ a {
   margin-bottom: 10px;
 }
 
+.container__text {
+  font-size: 1rem;
+}
+
+.container__text-bold {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* .container__text,
+.container__text-bold {
+  text-align: center;
+} */
+
+.container__pictures--dog-toy:hover .container__text {
+  opacity: 0.5;
+}
+
 @media (max-width: 390px) {
   .container__pictures {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 390px) {
+  .container {
+    justify-content: space-around;
+  }
+
+  .container__pictures {
+    width: 100%;
+  }
+
+  .container__pictures-text {
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .container__link-ref {
+    text-align: center;
+  }
+
+  .container__web-name {
+    text-align: start;
+  }
+
+  .container__link-button:hover {
+    background-color: white;
+  }
+  .container__link-ref {
+    color: #ed6336;
   }
 }
