@@ -9,29 +9,39 @@
   <link rel="icon" href="./pet-icon.png">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
   <header>
-    <img src="./imagenes/logo2.png" alt="foot print">
-    <nav>
-      <ul>
-        <li> <a href="./index.html">Home</a></li>
-        <li><a href="./index.html">Live Demo</a>
+    <div class="header-content">
+      <img class="menu_logo" src="./imagenes/logo2.png" alt="foot print">
+
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger" <span></span></label>
+
+      <nav class="menu-dropdown">
+        <ul class="menus">
+          <li> <a href="#">Home</a></li>
+          <li>
+            <button type="button">Live Demo</button>
+          </li>
           <ul>
-            <li><a href="./index.html">Pets Boarding Services</a></li>
-            <li><a href="./index.html">Pets Toys and Food Shop</a></li>
+            <li><a href="#">Pets Boarding Services</a></li>
+            <li><a href="#">Pets Toys and Food Shop</a></li>
           </ul>
-        </li>
-        <li><a href="./index.html">Live Demo Blocks</a>
+          </li>
+          <li>
+            <button type="button">Live Demo Blocks</button>
+          </li>
           <ul>
-            <li><a href="./index.html">Ball</a></li>
-            <li><a href="./index.html">Bones</a></li>
+            <li><a href="#">Ball</a></li>
+            <li><a href="#">Bones</a></li>
           </ul>
-        </li>
-        <li><a href="./index.html">Buy Now</a></li>
-      </ul>
-    </nav>
+          </li>
+          <li><a href="#">Buy Now</a></li>
+        </ul>
+      </nav>
   </header>
   <main class="container">
     <section class="container__web">
